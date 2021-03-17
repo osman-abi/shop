@@ -33,7 +33,7 @@ class AboutBanner extends Component {
                    <span>Know more</span>
                 </div>
                 <div className="section-title mb-4">
-                  <h2 className="title text-left"> About CiyaShop</h2>
+                  <h2 className="title text-left"> Haqqımızda </h2>
                 <div className="text-wrapper">
                     <p>We are CiyaShop ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     { expandedDiv }
@@ -41,7 +41,7 @@ class AboutBanner extends Component {
                  </div>
                 <div className="ciyashop_button_wrapper ciyashop_button_width_default">
                     <div className="inline_hover ciyashop_button_link ciyashop_button_size_medium button-underline">
-                        <Link Style="cursor:pointer;" className="inline_hover"  onClick={() => this.setState({ showText: !this.state.showText }) }> {(this.state.showText) ? "Read Less.." : "Read More.."} </Link>
+                        <Link Style="cursor:pointer;" className="inline_hover"  onClick={() => this.setState({ showText: !this.state.showText }) }> {(this.state.showText) ? "Daha az.." : "Daha çox.."} </Link>
 
                     </div>
                 </div>

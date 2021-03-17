@@ -85,7 +85,7 @@ class Footer extends React.Component {
                             </div>
                             <div className="col-lg-4  col-md-6 footer-align-left">
                             <div className="footer-nav-menu widget">
-                                <h4 className="footer-title title">Useful Links</h4>
+                                <h4 className="footer-title title">Faydalı linklər</h4>
                                 <div className="menu-useful-links-container">
                                 <ul className="menu">
                                     <li className="menu-item active"><Link to="/">Ana səhifə</Link></li>

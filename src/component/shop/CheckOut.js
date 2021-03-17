@@ -214,17 +214,17 @@ class CheckOut extends Component {
                     <Row className="intro-title align-items-center">
                         <Col md={6} className="text-left">
                             <div className="intro-title-inner">
-                                <h1>Checkout</h1>
+                                <h1>Sifariş</h1>
                             </div>
                         </Col>
                         <Col md={6} className="text-right">
                             <ul className="ciyashop_breadcrumbs page-breadcrumb breadcrumbs">
                                 <li className="home">
                                     <span>
-                                        <Link className="bread-link bread-home" to="/">Home</Link>
+                                        <Link className="bread-link bread-home" to="/">Ana səhifə</Link>
                                     </span>
                                 </li>
-                                <li><span>Checkout</span></li>
+                                <li><span>Sifariş</span></li>
                             </ul>
                         </Col>
                     </Row>
@@ -238,7 +238,7 @@ class CheckOut extends Component {
                             <Row>
                                 <Col sm={12} >
                                     <div class="billing-fields mt-5">
-                                        <h3>Billing details</h3>
+                                        <h3>Sifariş məlumatları</h3>
                                         <div class="billing-fields__field-wrapper">
                                             <div class="form-group">
                                                 <label for="billing_first_name" class="">First name&nbsp;<abbr class="required" title="required">*</abbr>

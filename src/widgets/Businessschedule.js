@@ -24,7 +24,7 @@ class Businessschedule extends Component {
                 <div className="ciyashop_info_box-content-wrap">
                   <div className="ciyashop_info_box-content-inner">
                     <h4 className="ciyashop_info_box-title">
-                      Business Hours </h4>
+                      İş saatları </h4>
                     <div className="ciyashop_info_box-description">
                       <p className="mb-1">Our Support team is available from</p>
                       <p><strong>Monday to Friday</strong> : 10 a.m. – 7 p.m. (GMT +1)<br />
@@ -52,7 +52,7 @@ class Businessschedule extends Component {
                 <div className="ciyashop_info_box-content-wrap">
                   <div className="ciyashop_info_box-content-inner">
                     <h4 className="ciyashop_info_box-title">
-                      Our Support Center </h4>
+                      Texniki dəstək </h4>
                     <div className="ciyashop_info_box-description">
                       <p>We are available 24x7 online.</p>
                     </div>
@@ -77,7 +77,7 @@ class Businessschedule extends Component {
                 <div className="ciyashop_info_box-content-wrap">
                   <div className="ciyashop_info_box-content-inner">
                     <h4 className="ciyashop_info_box-title">
-                      Some Information </h4>
+                      Digər məlumatlar</h4>
                     <div className="ciyashop_info_box-description">
                       <p className="mb-1">Our Support team is available from</p>
                       <p><strong>Monday to Friday</strong> : 10 a.m. – 7 p.m. (GMT +1)<br />

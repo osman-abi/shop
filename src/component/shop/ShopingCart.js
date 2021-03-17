@@ -181,16 +181,16 @@ class ShopingCart extends Component {
                                                     <th clas="product-remove"></th>
                                                     <th className="product-thumbnail"></th>
                                                     <th className="product-name">
-                                                        <span className="nobr">Product</span>
+                                                        <span className="nobr">Məhsul</span>
                                                     </th>
                                                     <th className="product-price">
                                                         <span className="nobr">
-                                                            Price </span>
+                                                            Qiymət </span>
                                                     </th>
                                                     <th className="product-stock-status">
-                                                        Quantity
+                                                        Miqdar
                                         </th>
-                                                    <th className="product-subtotal">Total</th>
+                                                    <th className="product-subtotal">Cəm</th>
                                                 </tr>
 
                                                 {this.ReadCartItems().map((CartItem, index) => (
@@ -211,7 +211,7 @@ class ShopingCart extends Component {
                                                         </td>
                                                         <td className="product-quantity">
                                                             <div className="quantity">
-                                                                <label className="screen-reader-text" for="quantity_5cd96a418e8ad">Quantity</label>
+                                                                <label className="screen-reader-text" for="quantity_5cd96a418e8ad">Miqdar</label>
                                                                 <input type="text" className="input-text qty text" value={CartItem.Qty} title="Qty" />
                                                                 <div className="quantity-nav">
                                                                     <Link className="quantity-button quantity-up" onClick={() => this.PlusQty(index)} >+</Link>
@@ -231,17 +231,17 @@ class ShopingCart extends Component {
                                 </Col>
                                 <div className="cart-collaterals col-xl-4">
                                     <div className="cart_totals ">
-                                        <h2>Cart totals</h2>
+                                        <h2>Çek</h2>
                                         <div className="table-responsive">
                                         <Table cellspacing="0" className="shop_table shop_table_responsive">
                                             <tbody>
                                                 <tr className="cart-subtotal">
-                                                    <th>Subtotal</th>
+                                                    <th>Cəm</th>
                                                     <td data-title="Subtotal"><span className="woocs_special_price_code"><span className="Price-amount amount"><span className="Price-currencySymbol">$</span> {this.ReadCartItems().reduce((fr, CartItem) => fr + (CartItem.Qty * CartItem.Rate), 0).toLocaleString(navigator.language, { minimumFractionDigits: 0 })}  </span></span>
                                                     </td>
                                                 </tr>
                                                 <tr className="shipping-totals shipping">
-                                                    <th>Shipping</th>
+                                                    <th>Çatdırılma</th>
                                                     <td data-title="Shipping">
                                                         <ul id="shipping_method" className="shipping-methods">
                                                             <a onClick={() => this.SetShippingCharge(1)}  >
@@ -268,7 +268,7 @@ class ShopingCart extends Component {
 
 
                                                 <tr className="shipping-totals shipping">
-                                                    <th>Shipping Address</th>
+                                                    <th>Çatdırılacaq ünvan</th>
                                                     <td data-title="Shipping">
                                                         {this.state.Adress1}
                                                         <br />
@@ -281,7 +281,7 @@ class ShopingCart extends Component {
 
                                                                     <div className="container">
                                                                         <div className="cart_totals">
-                                                                            <h2>Shipping Addresses</h2>
+                                                                            <h2>Qiymət</h2>
                                                                             <div className="table-responsive">
                                                                             <table className="shop_table shop_table_responsive table">
                                                                             <tr className="cart-collaterals">
@@ -334,7 +334,7 @@ class ShopingCart extends Component {
                                                     </td>
                                                 </tr>
                                                 <tr className="order-total">
-                                                    <th>Total</th>
+                                                    <th>Cəm</th>
                                                     <td data-title="Total"><strong><span className="special_price_code"><span className="Price-amount amount"><span className="Price-currencySymbol">$</span> {parseFloat(parseFloat(this.ReadCartItems().reduce((fr, CartItem) => fr + (CartItem.Qty * CartItem.Rate), 0)) + parseFloat(this.state.TotalShippingCarge.toFixed(2))).toLocaleString(navigator.language, { minimumFractionDigits: 2 })}    </span></span></strong>
                                                     </td>
                                                 </tr>
@@ -343,7 +343,7 @@ class ShopingCart extends Component {
                                          </div>
                                         <div className="proceed-to-checkout">
                                             <Link to="CheckOut" className="checkout-button button">
-                                                Proceed to checkout</Link>
+                                                Sİfariş et</Link>
                                         </div>
                                     </div>
                                 </div>
@@ -351,8 +351,8 @@ class ShopingCart extends Component {
                             :
                             <div className="wishlist-not-found">
                             <img src={require(`../../assets/images/empty-search.jpg`)} className="img-fluid mb-4" />
-                            <h4 className="d-block">Your cart is currently empty.</h4>
-                            <a className="btn btn-primary" href="/shop">Return to shop</a>
+                            <h4 className="d-block">Səbətiniz boşdur.</h4>
+                            <a className="btn btn-primary" href="/shop">Mağazaya qayıt</a>
                             </div>
                         }
                     </Container>

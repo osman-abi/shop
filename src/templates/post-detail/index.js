@@ -212,7 +212,7 @@ const productslider = {
                     </div>
                     <form className="cart">
                         <div className="quantity">
-                        <label className="screen-reader-text" htmlFor="quantity_5cdab503cf26f">Quantity</label>
+                        <label className="screen-reader-text" htmlFor="quantity_5cdab503cf26f">Miqdar</label>
                          <input type="text" className="input-text qty text" value={qty} title="Qty" />
                             <div className="quantity-nav">
                                     <Link className="quantity-button quantity-up" onClick={() => this.PlusQty()} >+</Link>
@@ -222,7 +222,7 @@ const productslider = {
                         {!this.CheckCardItem(product.id) ?
                                        <Link onClick={()=>this.AddToCart(product.id,product.name,product.pictures[0],qty,product.salePrice,"In Stock")}  className="button single_add_to_cart_button" rel="nofollow">Səbətə əlavə et</Link>
                                  :
-                                       <Link  to="/ShopingCart"  className="button single_add_to_cart_button" rel="nofollow">View Cart</Link>
+                                       <Link  to="/ShopingCart"  className="button single_add_to_cart_button" rel="nofollow">Səbətə keçid et</Link>
                                  }
                         <div className="clearfix" />
                     </form>
@@ -236,7 +236,7 @@ const productslider = {
                                 </div>
                                 :
                                 <div className="add-to-wishlist-fill">
-                                <Link to="/wishlist" >Browse Wishlist</Link>
+                                <Link to="/wishlist" >Seçilmişləri göstər</Link>
                                 </div>
                                 }
 

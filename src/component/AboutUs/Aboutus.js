@@ -54,30 +54,7 @@ class Aboutus extends Component {
                 </div>
                 <div className="content-wrapper">
                     <AboutBanner2 />
-                    <InterestingFacts />
-                    <div className="section-wrapper section-ptb">
-                        <Container>
-                        <Row className="justify-content-center">
-                            <Col sm={12} lg={7}>
-                            <div className="section-title text-center">
-                                <h2 className="title">Our Team</h2>
-                                <p className="text-center">Discover the best collection for autumn of Stylist Art. With so
-                                charming, modern and
-                                passionate, you certainly love this collection.</p>
-                            </div>
-
-                            </Col>
-                        </Row>
-                        <Row>
-                            <OurTeam settings={ourteam} />
-                        </Row>
-                        </Container>
-                    </div>
-                    <div className="section-wrapper section-ptb bg-dark-gray">
-                        <Container>
-                            <BrandLogoSlider2 />
-                        </Container>
-                    </div>
+                    
                 </div>
             </div>
         )

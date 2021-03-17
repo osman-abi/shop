@@ -24,7 +24,7 @@ class Contactus extends Component {
             <div className="inner-intro header_intro header_intro_bg-image header_intro_opacity header_intro_opacity-custom">
             <Container>
                 <Row className="intro-title align-items-center intro-section-center">
-                    <PageTitle title="Contact Us"/>
+                    <PageTitle title="Əlaqə"/>
                 </Row>
               </Container>
             </div>

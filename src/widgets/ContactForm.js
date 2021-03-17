@@ -11,9 +11,7 @@ function ContactForm() {
     return (
         <div className="contact-wrapper bg-gray w-100">
             <div className="section-title">
-                <h2 className="title text-left">Send Us Message</h2>
-                <p>Proin gravida nibh vel velit auctor aliquet aenean sollicitudin lorem quis
-                bibendum auctor.</p>
+                <h2 className="title text-left">Bizə yazın</h2>
                 </div>
                 <Form>
                     <Row>

@@ -76,7 +76,6 @@ class ShopPage2 extends Component {
                                 <div className="shop-sidebar-widgets pt-3">
                                     <SideFilter />
                                     <SocialFilter />
-                                    <ShopBanner />
                                 </div>
                             </div>
                             <div className="content col-xl-9 col-lg-8">
@@ -107,8 +106,7 @@ class ShopPage2 extends Component {
                                     <Row className="products products-loop grid ciyashop-products-shortcode">
                                         <div className="col-sm-12 text-center  mt-5" >
                                             <img src={require(`../../assets/images/empty-search.jpg`)} className="img-fluid mb-4" />
-                                            <h3>Sorry! No products were found matching your selection!    </h3>
-                                            <p>Please try to other words.</p>
+                                            <h3>Təəssüf! axtardığınız kateqoriyaya uyğun nəticə tapılmadı </h3>
                                             <button onClick={this.refreshPage} className="btn btn-solid">Continue Shopping</button>
                                         </div>
                                     </Row>

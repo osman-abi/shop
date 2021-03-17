@@ -61,15 +61,12 @@ class HomePage extends Component {
                      <article id="post-13069" className="post-13069 page type-page status-publish hentry">
                         <div className="entry-content">
                            <Container>
-                                 <EndOfSeason />
-                           </Container>
-                           <Container>
                                     <Row className="mb-0 mb-sm-3 mb-lg-5">
                                        <Col sm={12}>
                                           <Row mb={3} className="justify-content-center">
                                           <Col sm={10} lg={6} className="text-center">
                                              <div className="section-title">
-                                                <h2 className="title"> Ən çox satılan məhsullar</h2>
+                                                <h2 className="title"> Ən son məhsullar</h2>
                                                 {/* <p>Forget about struggling to do everything at once: taking care of the family, Running your business etc.</p> */}
                                              </div>
                                            </Col>
@@ -78,23 +75,16 @@ class HomePage extends Component {
                                        </Col>
                                     </Row>
                               </Container>
-                              
-                              <div className="container-fluid section-2">
-                                 <DealOfTheWeek />
-                              </div>
                               <div className="container section-3">
                                  <AboutBanner />
                               </div>
-                              <Container>
-                                 <Subscribe />
-                              </Container>
                               <Container>
                                     <div className="row section-ptb">
                                        <Col sm={12}>
                                           <div className="row text-center">
                                              <div className="col-sm-12 offset-lg-2 col-lg-8 offset-md-1 col-md-9">
                                                 <div className="section-title">
-                                                   <h2 className="title"> Our Latest Products</h2>
+                                                   <h2 className="title"> Ən çox satılan məhsullar</h2>
                                                    <p>Read what we say on our blog. you do not have to worry about getting stuck alone trying to figure everything out.</p>
                                                 </div>
                                              </div>

@@ -374,7 +374,7 @@ class Header extends React.Component {
                                                                                                         <Link to="#"><img width={60} height={76} src={require(`../../assets/images/${CartItem.ProductImage}`)} className="img-fluid" alt /></Link>
                                                                                                         <div className="media-body">
                                                                                                             <Link to="#" className="product-title">{CartItem.ProductName}</Link>
-                                                                                                            <span className="quantity">{CartItem.Qty} × <span className="woocs-special_price_code"><span className="ciya-Price-amount amount"><span className="ciya-Price-currencySymbol">$</span>{CartItem.Rate.toLocaleString(navigator.language, { minimumFractionDigits: 0 })}</span></span></span>
+                                                                                                            <span className="quantity">{CartItem.Qty} × <span className="woocs-special_price_code"><span className="ciya-Price-amount amount"><span className="ciya-Price-currencySymbol"></span>{CartItem.Rate.toLocaleString(navigator.language, { minimumFractionDigits: 0 })}</span> AZN </span></span>
                                                                                                         </div>
                                                                                                     </div>
                                                                                                 </li>
@@ -382,10 +382,10 @@ class Header extends React.Component {
 
                                                                                         </ul>
                                                                                     </div>
-                                                                                    <p className="ciyashop-mini-cart__total total"><strong>Subtotal:</strong> <span className="woocs_special_price_code"><span className="ciyashop-Price-amount amount"><span className="ciyashop-Price-currencySymbol">$</span> {this.ReadCartItems().reduce((fr, CartItem) => fr + (CartItem.Qty * CartItem.Rate), 0).toLocaleString(navigator.language, { minimumFractionDigits: 0 })}</span></span></p>
+                                                                                    <p className="ciyashop-mini-cart__total total"><strong>Cəm:</strong> <span className="woocs_special_price_code"><span className="ciyashop-Price-amount amount"><span className="ciyashop-Price-currencySymbol"></span> {this.ReadCartItems().reduce((fr, CartItem) => fr + (CartItem.Qty * CartItem.Rate), 0).toLocaleString(navigator.language, { minimumFractionDigits: 0 })}</span> AZN</span></p>
                                                                                     <p className="ciyashop-mini-cart__buttons buttons">
-                                                                                        <Link onClick={() => this.HideCart()} to="/ShopingCart" className="button wc-forward">View cart</Link>
-                                                                                        <Link onClick={() => this.HideCart()}  to="/CheckOut" className="button checkout wc-forward">Checkout</Link>
+                                                                                        <Link onClick={() => this.HideCart()} to="/ShopingCart" className="button wc-forward">Səbətə keçid</Link>
+                                                                                        <Link onClick={() => this.HideCart()}  to="/CheckOut" className="button checkout wc-forward">Sifariş et</Link>
                                                                                     </p>
                                                                                 </div>
                                                                             </div>
@@ -495,28 +495,28 @@ class Header extends React.Component {
                                                 <TabPane tabId="2">
                                                     <form>
                                                         <div class="form-group">
-                                                            <label>Name</label>
+                                                            <label>Ad</label>
                                                             <input type="texttext" class="form-control" placeholder="adınızı daxil edin"></input>
                                                         </div>
                                                         <div class="form-group">
-                                                            <label>Email address</label>
-                                                            <input type="text" class="form-control" placeholder="Enter email"></input>
+                                                            <label>Email ünvanı</label>
+                                                            <input type="text" class="form-control" placeholder="Emailinizi daxil edin"></input>
                                                         </div>
                                                         <div class="form-group">
-                                                            <label>Password </label>
-                                                            <input type="text" class="form-control" placeholder="Password"></input>
+                                                            <label>Parol </label>
+                                                            <input type="text" class="form-control" placeholder="Parol"></input>
                                                         </div>
                                                         <div class="form-group">
-                                                            <label>Confirm Password </label>
-                                                            <input type="text" class="form-control" placeholder="Confirm Password"></input>
+                                                            <label>Parol (Təkrar) </label>
+                                                            <input type="text" class="form-control" placeholder="Parolu yeniden daxil et"></input>
                                                         </div>
                                                         <div class="form-group">
-                                                            <Link className="btn btn-primary" >Register</Link>
+                                                            <Link className="btn btn-primary" >Qeydiyyatdan keç</Link>
                                                             <Link className="btn btn-secondary ml-2" onClick={this.toggle} >Cancel</Link>
 
                                                         </div>
-                                                        <p className="mb-0">Already have account? <Link to="#" className={classnames({ active: this.state.activeTab === '1' })}
-                                                            onClick={() => { this.logintoggle('1'); }} > SignIn </Link> here </p>
+                                                        <p className="mb-0">Hesabınız var?<Link to="#" className={classnames({ active: this.state.activeTab === '1' })}
+                                                            onClick={() => { this.logintoggle('1'); }} > Daxil ol </Link></p>
                                                     </form>
                                                 </TabPane>
                                             </TabContent>
